@@ -3,6 +3,7 @@ import Hero from './Pages/Hero';
 import { useLoaderData } from 'react-router';
 import Friends from './Friends/Friends';
 
+
 const Home = () => {
     const friendsData = useLoaderData()
 
@@ -16,6 +17,7 @@ const Home = () => {
                     friendsData.map(friend => <Friends key={friend.id} friend={friend}></Friends>)
                 }
             </div>
+
         </div>
     );
 };
