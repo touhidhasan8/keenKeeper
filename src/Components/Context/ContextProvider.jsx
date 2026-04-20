@@ -6,25 +6,53 @@ export const AppContext = createContext();
 const ContextProvider = ({ children }) => {
 
     const [clicked, setClicked] = useState([]);
+    
 
     const handleCall = (id, name) => {
+        const newData = {
+            id: parseInt(id),
+            name,
+            type: "call",
+            time: new Date().toLocaleString()
+        };
 
-        setClicked([...clicked, id]);
+        setClicked([...clicked, newData]);
+
         toast.success(`Calling ${name}`);
+        console.log(clicked);
+
+    };
+    const handleMessage = (id, name) => {
+        const newData = {
+            id: parseInt(id),
+            name,
+            type: "message",
+            time: new Date().toLocaleString()
+        };
+
+        setClicked([...clicked, newData]);
+
+        toast.info(`Message sent to ${name}`);
+        console.log(clicked);
+
+    };
+    const handleVideoCall = (id, name) => {
+        const newData = {
+            id: parseInt(id),
+            name,
+            type: "video",
+            time: new Date().toLocaleString()
+        };
+
+        setClicked([...clicked, newData]);
+
+        toast.warn(`Video calling ${name}`);
         console.log(clicked);
         
     };
 
-    const handleMessage = (id, name) => {
-        setClicked([...clicked, id]);
-        toast.info(`Message sent to ${name}`);
-    };
 
-    const handleVideoCall = (id, name) => {
-        setClicked([...clicked, id]);
-        toast.warn(`Video calling ${name}`);
-    };
-
+   
     const data = {
         clicked,
         handleCall,

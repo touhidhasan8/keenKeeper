@@ -35,7 +35,7 @@ const FriendDetails = () => {
 
   return (
     <div className="container mx-auto px-3 sm:px-4 md:px-6 py-6 md:py-8 bg-[#F8FAFC]">
-      <ToastContainer position="top-right" autoClose={2000} />
+      
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-4 space-y-6">
