@@ -6,6 +6,8 @@ export const AppContext = createContext();
 const ContextProvider = ({ children }) => {
 
     const [clicked, setClicked] = useState([]);
+    const [messages, setMessage] = useState([]);
+    const [videos, setVideo] = useState([]);
     
 
     const handleCall = (id, name) => {
@@ -19,7 +21,7 @@ const ContextProvider = ({ children }) => {
         setClicked([...clicked, newData]);
 
         toast.success(`Calling ${name}`);
-        console.log(clicked);
+       
 
     };
     const handleMessage = (id, name) => {
@@ -30,10 +32,10 @@ const ContextProvider = ({ children }) => {
             time: new Date().toLocaleString()
         };
 
-        setClicked([...clicked, newData]);
+        setMessage([...messages, newData]);
 
         toast.info(`Message sent to ${name}`);
-        console.log(clicked);
+      
 
     };
     const handleVideoCall = (id, name) => {
@@ -44,10 +46,10 @@ const ContextProvider = ({ children }) => {
             time: new Date().toLocaleString()
         };
 
-        setClicked([...clicked, newData]);
+        setVideo([...videos, newData]);
 
         toast.warn(`Video calling ${name}`);
-        console.log(clicked);
+       
         
     };
 
@@ -55,6 +57,8 @@ const ContextProvider = ({ children }) => {
    
     const data = {
         clicked,
+        videos,
+        messages,
         handleCall,
         handleMessage,
         handleVideoCall

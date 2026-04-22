@@ -6,6 +6,7 @@ import Error from "../Error/Error";
 import Loadings from "../Loadings/Loadings";
 import Friends from "../Friends/Friends";
 import FriendDetails from "../Friends/FriendDetails";
+import Status from "../Pages/Status";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
                 Component: FriendDetails,
                 loader:()=>fetch('/data.json'),
                 hydrateFallbackElement:<Loadings></Loadings>
+            },
+            {
+                path: 'stats',
+                Component:Status
             }
 
         ],
