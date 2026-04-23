@@ -3,12 +3,14 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recha
 import { AppContext } from '../Context/ContextProvider';
 
 const Status = () => {
-      const { clicked } = useContext(AppContext)
+    const { clicked, messages, videos } = useContext(AppContext)
+
+   
     const data = [
         { name: "Call", value: clicked.length, fill: "#0088FE" },
-        { name: "Message", value: clicked.length, fill: "#00C49F" },
-        { name: "Video", value: clicked.length, fill: "#FFBB28" },
-       
+        { name: "Message", value: messages.length , fill: "#00C49F" },
+        { name: "Video", value: videos.length , fill: "#FFBB28" },
+
     ];
 
     return (
@@ -17,7 +19,7 @@ const Status = () => {
                 Friendship Analytics
             </h1>
 
-            <div className="w-full max-w-125 h-125">
+            <div className="w-full max-w-[500px] h-[500px]">
                 <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
                         <Pie
@@ -30,8 +32,8 @@ const Status = () => {
                             isAnimationActive={true}
                         >
                         </Pie>
-                    <Legend></Legend>
-                    <Tooltip/>
+                        <Legend></Legend>
+                        <Tooltip />
                     </PieChart>
                 </ResponsiveContainer>
             </div>

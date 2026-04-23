@@ -9,6 +9,7 @@ import { AppContext } from '../Context/ContextProvider';
 const FriendDetails = () => {
   const { id } = useParams();
   const friends = useLoaderData();
+  const { handleCall, handleMessage, handleVideoCall } = useContext(AppContext);
 
   const friendDetails = friends?.find(
     (friend) => friend.id === parseInt(id)
@@ -29,8 +30,6 @@ const FriendDetails = () => {
   } = friendDetails;
 
   const goal_days = friendDetails.goal_days || 30;
-
-  const { handleCall, handleMessage, handleVideoCall } = useContext(AppContext)
 
 
   return (

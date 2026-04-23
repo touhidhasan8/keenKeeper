@@ -19,7 +19,7 @@ const Hero = () => {
                     <span>Add a Friend</span>
                 </button>
             </div>
-            {/* Total friends counting  */}
+            
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4'>
                 <div className='p-5 shadow-2xl rounded-2xl flex flex-col items-center justify-center'>
                     <h1 className='text-3xl font-bold text-[#244D3F]'>10</h1>
