@@ -1,16 +1,46 @@
-# React + Vite
+# keenKeeper - Tech Service Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+DigiTools is a modern web application that provides a wide range of tech-related services. Users can easily select a package that suits their needs, choose multiple services, view the price of each service, and see the total cost before placing their order.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 https://kinkeeper-projects.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Select different service packages
+- Choose multiple services
+- View selected services in a list
+- User-friendly and responsive UI
+- Smooth interaction using React Hooks
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- Tailwind CSS
+- DaisyUI
+- React Hooks (`useState`, `contextApi` etc.)
+
+---
+
+## Challenges  
+- Call, Video Call , Message  Button Add To Context Api 
+- Details Page Data Integration 
+-Filtering click call, video , message , click to show only clicked data 
+
+## 📱 Responsive Design
+
+The application is fully responsive and works smoothly across:
+
+- Mobile devices
+- Tablet devices
+- Desktop screens
+
