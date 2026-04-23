@@ -34,7 +34,7 @@ DigiTools is a modern web application that provides a wide range of tech-related
 ## Challenges  
 - Call, Video Call , Message  Button Add To Context Api 
 - Details Page Data Integration 
--Filtering click call, video , message , click to show only clicked data 
+- Filtering click call, video , message , click to show only clicked data 
 
 ## 📱 Responsive Design
 
