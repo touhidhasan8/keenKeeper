@@ -8,7 +8,8 @@ KeenKeeper is a modern friend connection app that allows users to stay connected
 
 ## 🚀 Live Demo
 
-🔗 https://kinkeeper-projects.netlify.app/
+🔗 Live Link : https://kinkeeper-projects.netlify.app/
+🔗 GitHub Link :https://github.com/touhidhasan8/keenKeeper
 
 ---
 
