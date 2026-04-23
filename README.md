@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-DigiTools is a modern web application that provides a wide range of tech-related services. Users can easily select a package that suits their needs, choose multiple services, view the price of each service, and see the total cost before placing their order.
+KeenKeeper is a modern friend connection app that allows users to stay connected through calls, messages, and video calls, while also managing and viewing friend details in one place.
 
 ---
 
